@@ -15,13 +15,15 @@
 
 ## Fsv.Common.Bll
 
-- CustomerService
+- CustomersService
 	- GetCustomers()
+	- CreateCustomer()
 	- AddCustomer()
 
-- VerificationService
+- VerificationsService
 	- GetVerifications()
 	- GetVerification()
+	- CreateVerification()
 	- AddVerification()
 
 ## Fsv.Reporting.Bll
@@ -29,6 +31,6 @@
 - VerificationReport
 
 
-- ReportingService
+- ReportsGenerator
 	- GenerateVerificationReport()
 
