@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fsv.Maui.App.Views.VerificationsListItemView"
+             xmlns:viewModels="clr-namespace:Fsv.Maui.App.ViewModels"
+             x:DataType="viewModels:VerificationViewModel">
+    <StackLayout>
+        <Label Text="{Binding CustomerName}" FontSize="22"/>
+        <Label Text="{Binding Date}" FontSize="14" TextColor="Silver"/>
+    </StackLayout>
+</ContentView>

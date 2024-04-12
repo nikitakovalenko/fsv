@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Fsv.Maui.App.ViewModels"
+             xmlns:v="clr-namespace:Fsv.Maui.App.Views"
+             x:Class="Fsv.Maui.App.Views.VerificationsList"
+             x:DataType="vm:VerificationsListViewModel"
+             Title="VerificationsList">
+
+    <CollectionView x:Name="verificationsCollection"
+                    ItemsSource="{Binding AllVerifications}"
+                    Margin="20"
+                    SelectionMode="Single">
+        <!-- Designate how the collection of items are laid out -->
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+        </CollectionView.ItemsLayout>
+
+        <!-- Define the appearance of each item in the list -->
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <v:VerificationsListItemView/>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>
